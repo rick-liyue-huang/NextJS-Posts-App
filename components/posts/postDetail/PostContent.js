@@ -11,14 +11,16 @@ const DUMMY_POST = {
 	date: '2022-02-10'
 };
 
-const PostContentComponent = () => {
+const PostContentComponent = (props) => {
+	const {post} = props;
+	const imagePath = `/images/posts/${post.slug}/${post.image}`
 
-	const imagePath = `/images/posts/${DUMMY_POST.slug}/${DUMMY_POST.image}`
+
 
 	return (
 		<article className={styles.content}>
-			<PostHeaderComponent title={DUMMY_POST.title} image={imagePath} />
-			<ReactMarkdown>{DUMMY_POST.content}</ReactMarkdown>
+			<PostHeaderComponent title={post.title} image={imagePath} />
+			<ReactMarkdown>{post.content}</ReactMarkdown>
 		</article>
 	);
 };
