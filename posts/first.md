@@ -6,6 +6,29 @@ expert: first test expert
 isFeatured: true
 ---
 
-## This is first title
 
-this is some content with image [link](https://images.unsplash.com/photo-1652267571513-68cc7df7487d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80)
+NextJS is a **framework for ReactJS**.
+
+Wait a second ... a "framework" for React? Isn't React itself already a framework for JavaScript?
+
+Well ... first of all, React is a "library" for JavaScript. That seems to be important for some people.
+
+Not for me, but still, there is a valid point: React already is a framework / library for JavaScript. So it's already an extra layer on top of JS.
+
+## Why would we then need NextJS?
+
+Because NextJS makes building React apps easier - especially React apps that should have server-side rendering (though it does way more than just take care of that).
+
+In this article, we'll dive into the core concepts and features NextJS has to offer:
+
+- File-based Routing
+- Built-in Page Pre-rendering
+- Rich Data Fetching Capabilities
+- Image Optimization
+- Much More
+
+## File-based Routing
+
+![Create routes via your file + folder structure](first.webp)
+
+... More content ...
