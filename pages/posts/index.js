@@ -1,6 +1,7 @@
 import React from 'react';
 import AllPostComponent from "../../components/posts/AllPost";
 import {getAllPosts} from "../../lib/posts-util";
+import Head from "next/head";
 
 const DUMMY_POSTS = [
 	{
@@ -35,7 +36,14 @@ const DUMMY_POSTS = [
 
 const AllPostsPage = (props) => {
 	return (
-		<AllPostComponent posts={props.posts} />
+		<>
+			<Head>
+				<title>All My Posts</title>
+				<meta name={'description'} content={'a list of all posts'} />
+			</Head>
+			<AllPostComponent posts={props.posts} />
+		</>
+
 	);
 };
 

@@ -2,7 +2,7 @@
 import HeroComponent from "../components/homepage/Hero";
 import FeaturedPostsComponent from "../components/homepage/FeturedPosts";
 import {getFeaturedPosts} from "../lib/posts-util";
-
+import Head from "next/head";
 
 
 const DUMMY_POSTS = [
@@ -40,6 +40,10 @@ export default function Home(props) {
 
   return (
     <>
+      <Head>
+        <title>Post Home</title>
+        <meta name={'description'} content={'i post something'}  />
+      </Head>
      <HeroComponent />
      <FeaturedPostsComponent posts={props.posts} />
     </>

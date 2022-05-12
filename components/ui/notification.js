@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 
+
 import styles from './notification.module.css';
 
 function NotificationComponent(props) {
@@ -17,12 +18,12 @@ function NotificationComponent(props) {
 
   const cssClasses = `${styles.notification} ${statusClasses}`;
 
-  return (
+  return ReactDOM.createPortal((
     <div className={cssClasses}>
       <h2>{title}</h2>
       <p>{message}</p>
     </div>
-  );
+  ), document.getElementById('notification'));
 }
 
 export default NotificationComponent;
